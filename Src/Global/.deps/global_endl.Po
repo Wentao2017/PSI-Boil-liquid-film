@@ -1,0 +1,3 @@
+global_endl.o: global_endl.cpp global_endl.h
+
+global_endl.h:

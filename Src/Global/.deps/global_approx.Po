@@ -1,0 +1,92 @@
+global_approx.o: global_approx.cpp global_precision.h global_approx.h \
+ /cluster/apps/gcc/4.8.2/include/c++/4.8.2/cmath \
+ /cluster/apps/gcc/4.8.2/include/c++/4.8.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /cluster/apps/gcc/4.8.2/include/c++/4.8.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/stdc-predef.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /cluster/apps/gcc/4.8.2/include/c++/4.8.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /cluster/apps/gcc/4.8.2/include/c++/4.8.2/bits/cpp_type_traits.h \
+ /cluster/apps/gcc/4.8.2/include/c++/4.8.2/ext/type_traits.h \
+ /cluster/apps/intel/composer_xe_2015.0.090/composer_xe_2015.0.090/compiler/include/math.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h global_constants.h \
+ /cluster/apps/gcc/4.8.2/include/c++/4.8.2/cmath \
+ /cluster/apps/intel/composer_xe_2015.0.090/composer_xe_2015.0.090/compiler/include/math.h \
+ /cluster/apps/intel/composer_xe_2015.0.090/composer_xe_2015.0.090/compiler/include/limits.h \
+ /cluster/apps/gcc/4.8.2/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/include-fixed/limits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h global_precision.h
+
+global_precision.h:
+
+global_approx.h:
+
+/cluster/apps/gcc/4.8.2/include/c++/4.8.2/cmath:
+
+/cluster/apps/gcc/4.8.2/include/c++/4.8.2/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/cluster/apps/gcc/4.8.2/include/c++/4.8.2/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/cluster/apps/gcc/4.8.2/include/c++/4.8.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/cluster/apps/gcc/4.8.2/include/c++/4.8.2/bits/cpp_type_traits.h:
+
+/cluster/apps/gcc/4.8.2/include/c++/4.8.2/ext/type_traits.h:
+
+/cluster/apps/intel/composer_xe_2015.0.090/composer_xe_2015.0.090/compiler/include/math.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+global_constants.h:
+
+/cluster/apps/intel/composer_xe_2015.0.090/composer_xe_2015.0.090/compiler/include/limits.h:
+
+/cluster/apps/gcc/4.8.2/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/include-fixed/limits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:

@@ -1,0 +1,1 @@
+global_factor.o: global_factor.cpp
