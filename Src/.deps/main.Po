@@ -568,7 +568,7 @@ main.o: main.cpp Include/psi-boil.h Include/../Solver/Additive/additive.h \
  Include/../Profile/../Global/global_split_string.h \
  Include/../Profile/../Global/global_precision.h Include/../Model/model.h \
  /cluster/apps/gcc/4.8.2/include/c++/4.8.2/cassert /usr/include/assert.h \
- exchange_all.cpp initCond.cpp optfs.cpp micha2.cpp superfv.cpp optfs.cpp \
+ exchange_all.cpp initCond.cpp optfs.cpp micha.cpp superfv.cpp optfs.cpp \
  optbck.cpp
 
 Include/psi-boil.h:
@@ -1355,7 +1355,7 @@ initCond.cpp:
 
 optfs.cpp:
 
-micha2.cpp:
+micha.cpp:
 
 superfv.cpp:
 

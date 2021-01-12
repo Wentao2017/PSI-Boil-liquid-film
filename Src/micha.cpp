@@ -22,8 +22,8 @@
         if (m==Comp::w()) {
           utmp = (uvw[Comp::u()][i][j][k-1] + uvw[Comp::u()][i+1][j][k-1]
                  +uvw[Comp::u()][i  ][j][k] + uvw[Comp::u()][i+1][j][k  ])*0.25;
-          vtmp = (uvw[Comp::w()][i][j][k-1] + uvw[Comp::w()][i][j+1][k-1]
-                 +uvw[Comp::w()][i][j  ][k] + uvw[Comp::w()][i][j+1][k  ])*0.25;
+          vtmp = (uvw[Comp::v()][i][j][k-1] + uvw[Comp::v()][i][j+1][k-1]
+                 +uvw[Comp::v()][i][j  ][k] + uvw[Comp::v()][i][j+1][k  ])*0.25;
         } 
         real vmag2 = utmp*utmp + vtmp*vtmp + wtmp*wtmp;
         real dl = pow(xyz.dV(m,i,j,k),1.0/3.0);

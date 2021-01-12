@@ -2,13 +2,13 @@
 #include "exchange_all.cpp"
 
 /* domain size */
-const real LX = 0.01*16;  // domain length in x (axial)
+const real LX = 0.01;  // domain length in x (axial)
 const real LY = 0.00125;  // domain length in y
 const real LZ = 0.01;     // domain length in z (wall-wall)
 
 /* grid size */
 const int gLevel = 4;
-const int NX  = 32*gLevel*16;  // uniform grid
+const int NX  = 32*gLevel;  // uniform grid
 const int NY  =  4*gLevel;
 const int NZ  = 32*gLevel;
 
@@ -251,7 +251,7 @@ main(int argc, char ** argv) {
     /*--------------------------------------------+
     |  output free surface point & sliced planes  |
     +--------------------------------------------*/
-    #include "optfs.cpp"
+  //  #include "optfs.cpp"
 
     /*---------------------------+
     |  output entire field data  |
