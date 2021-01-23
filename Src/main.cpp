@@ -259,8 +259,9 @@ main(int argc, char ** argv) {
     if((time.current_time()) / (tint) >= real(iint) ) {
       uvw.exchange_all();
       boil::plot->plot(uvw,c,press,mu_t,"uvw-c-press-mu_t",iint);
-      //boil::plot->plot(sig_t,c,"sig_t-c",iint);
-      //boil::plot->plot(xyz,c,"xyz-c",iint);
+      boil::plot->plot(sig_t,c,"sig_t-c",iint);
+      boil::plot->plot(xyz,c,"xyz-c",iint);
+      boil::plot->plot(kappa,c,"kappa-c",iint);
       iint++;
     }
 
