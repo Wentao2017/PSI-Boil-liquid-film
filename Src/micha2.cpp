@@ -14,7 +14,7 @@
           }else{
               kappa_limiter = kappa[i][j][k];
           }  		  
-  	  real sigma_t = sigma * C_hmp2 * pow((kappa_limiter * dl),a_hmp2);                        
+  	  real sigma_t = sigma * C_hmp2 * pow((fabs(kappa_limiter) * dl),a_hmp2);                        
           sigma_t = std::min(100.0*sigma,sigma_t);
           xyz[m][i][j][k] *= (sigma+sigma_t)/sigma;
           sig_t[m][i][j][k] = sigma_t;  // for visualization
