@@ -4,7 +4,7 @@
       real sigma = mixed.sigma()->value();
 //      real kappa = conc.kappa()->value();
       for_vmijk(xyz,m,i,j,k){
-    	  const real C_hmp2 = 1.0;
+    	  const real C_hmp2 = 10.0;
     	  const real a_hmp2 = 1.0;     /*f=kappa*(sigma+sigma*C_hmp2*(kappa*dl)^a_hmp2)*gradphi*/
  	  real dl = pow(xyz.dV(m,i,j,k),1.0/3.0);
      	  //real sigma_t = C_hmp * rhol * vmag2 * dl;

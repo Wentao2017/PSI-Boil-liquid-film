@@ -309,7 +309,7 @@ main.o: main.cpp /usr/include/stdc-predef.h Include/psi-boil.h \
  Include/../Monitor/Rack/rack.h Include/../Monitor/Rack/../Location/location.h \
  Include/../Monitor/Rack/../Location/../monitor.h Include/../Profile/profile.h \
  Include/../Profile/../Global/global_split_string.h Include/../Model/model.h \
- exchange_all.cpp initCond.cpp optfs.cpp micha2.cpp superfv.cpp optbck.cpp
+ exchange_all.cpp initCond.cpp optfs.cpp micha3.cpp superfv.cpp optbck.cpp
 
 /usr/include/stdc-predef.h:
 
@@ -1101,7 +1101,7 @@ initCond.cpp:
 
 optfs.cpp:
 
-micha2.cpp:
+micha3.cpp:
 
 superfv.cpp:
 

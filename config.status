@@ -439,8 +439,8 @@ gives unlimited permission to copy, distribute and modify it."
 
 ac_pwd='/cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film'
 srcdir='.'
-INSTALL='/usr/bin/install -c'
-MKDIR_P='/usr/bin/mkdir -p'
+INSTALL='/cluster/apps/sfos/bin/install -c'
+MKDIR_P='/cluster/apps/sfos/bin/mkdir -p'
 AWK='gawk'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
@@ -727,15 +727,15 @@ S["am__leading_dot"]="."
 S["SET_MAKE"]=""
 S["AWK"]="gawk"
 S["mkdir_p"]="$(MKDIR_P)"
-S["MKDIR_P"]="/usr/bin/mkdir -p"
+S["MKDIR_P"]="/cluster/apps/sfos/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
 S["install_sh"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/install-sh"
 S["MAKEINFO"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/missing makeinfo"
 S["AUTOHEADER"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/missing automake-1.13"
+S["AUTOMAKE"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/missing automake-1.15"
 S["AUTOCONF"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/missing autoconf"
-S["ACLOCAL"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/missing aclocal-1.13"
+S["ACLOCAL"]="${SHELL} /cluster/home/guow/Development/PSI-Boil-2020/PSI-Boil-liquid-film/missing aclocal-1.15"
 S["VERSION"]="0.3"
 S["PACKAGE"]="psi-boil"
 S["CYGPATH_W"]="echo"

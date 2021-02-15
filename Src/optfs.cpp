@@ -94,6 +94,11 @@
                        Range<int>(uvw.sJ(m),uvw.eJ(m)),
                        Range<int>(uvw.sK(m),uvw.eK(m)),
                        m,ch,iint2);
+        fname = "kappa" + std::to_string(i_plane);
+        ch = &fname[0];
+        kappa.save_range(kappa.sI()+i, Range<int>(kappa.sJ(),kappa.eJ()),
+                             Range<int>(kappa.sK(),kappa.eK()),
+                             ch,iint2);
       }
       iint2++;
     }

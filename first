@@ -6,6 +6,7 @@ if [ $# -lt 1 ]; then
   echo "       " $0 "OPEN        -> configure for OPEN MPI"
   echo "       " $0 "OPEN-INTEL  -> configure for OPEN MPI with Intel"
   echo "       " $0 "OPEN-INTEL-CHECK  -> configure for OPEN MPI with Intel with -check-pointers"
+  echo "       " $0 "OPEN-GCC  -> configure for OPEN MPI with GCC"
   echo "       " $0 "CSCS        -> configure for CSCS machine"
   echo "       " $0 "CSCS-INTEL  -> configure for INTEL in CSCS.CH machine"
   echo "       " $0 "JULIER      -> configure for JULIER.CSCS.CH machine"
@@ -35,6 +36,13 @@ else
     autoheader
     automake --add-missing
     ./configure CC=mpicc CXX=mpiCC CXXFLAGS='-w2  -std=c++11 -check=uninit -traceback -fstack-protector-all -fp-trap=common -fp-stack-check -check-pointers=rw -check-pointers-undimensioned'
+    cd Src/Parallel; ln -f -s parallel.h mpi_macros.h; cd ../../
+  elif [ $1 = "OPEN-GCC" ]; then
+    aclocal
+    autoconf
+    autoheader
+    automake --add-missing
+    ./configure CC=mpicc CXX=mpicxx CXXFLAGS='-O2'
     cd Src/Parallel; ln -f -s parallel.h mpi_macros.h; cd ../../
   elif [ $1 = "MPICH" ]; then
     aclocal
@@ -99,6 +107,7 @@ else
     echo "       " $0 "OPEN        -> configure for OPEN MPI"
     echo "       " $0 "OPEN-INTEL  -> configure for OPEN MPI with Intel"
     echo "       " $0 "OPEN-INTEL-CHECK  -> configure for OPEN MPI with Intel with -check-pointers"
+    echo "       " $0 "OPEN-GCC  -> configure for OPEN MPI with GCC"
     echo "       " $0 "CSCS        -> configure for CSCS machine"
     echo "       " $0 "CSCS-INTEL  -> configure for INTEL in CSCS.CH machine"
     echo "       " $0 "JULIER      -> configure for JULIER.CSCS.CH machine"

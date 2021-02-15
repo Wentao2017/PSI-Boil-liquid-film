@@ -1,5 +1,7 @@
-global_minmax.o: global_minmax.cpp global_precision.h global_minmax.h \
- global_precision.h
+global_minmax.o: global_minmax.cpp /usr/include/stdc-predef.h global_precision.h \
+ global_minmax.h
+
+/usr/include/stdc-predef.h:
 
 global_precision.h:
 

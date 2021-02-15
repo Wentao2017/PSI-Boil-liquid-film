@@ -2,7 +2,7 @@
     for_m(m){ 
       real rhol = liquid.rho()->value();
       real sigma = mixed.sigma()->value();
-      const real C_hmp = 0.5;
+      const real C_hmp = 2.0;
       for_vmijk(xyz,m,i,j,k){
         real utmp = uvw[Comp::u()][i][j][k];
         real vtmp = uvw[Comp::v()][i][j][k];

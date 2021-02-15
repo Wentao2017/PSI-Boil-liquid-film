@@ -13,7 +13,7 @@ const int NY  =  4*gLevel;
 const int NZ  = 32*gLevel;
 
 /* initial and boundary condition */
-const real dpdx = 2.0*1.49e+4;     // pressure drop given as boundary condition
+const real dpdx = 5.2e+3;     // pressure drop given as boundary condition
 const real filmThick_init=2.5e-4;  // used for initial condition
 const real superfv_l_init=0.5;     // used for initial condition
 const real superfv_g_init=25.0;    // used for initial condition
@@ -180,7 +180,7 @@ main(int argc, char ** argv) {
 
     /* turbulent surface tension */
 #if 1
-    #include "micha2.cpp"
+    #include "micha3.cpp"
 #endif
 
     /* gravity force */
@@ -222,7 +222,7 @@ main(int argc, char ** argv) {
     }
     press.bnd_update();
     exchange_all(press,dpdx*LX);
-#if 0
+#if 1
     /* limit velocity */
     for_m(m) {
       for_vmijk(uvw,m,i,j,k){
@@ -251,7 +251,7 @@ main(int argc, char ** argv) {
     /*--------------------------------------------+
     |  output free surface point & sliced planes  |
     +--------------------------------------------*/
-  //  #include "optfs.cpp"
+    #include "optfs.cpp"
 
     /*---------------------------+
     |  output entire field data  |

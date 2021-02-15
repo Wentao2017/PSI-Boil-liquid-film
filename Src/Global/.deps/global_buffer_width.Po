@@ -1,3 +1,6 @@
-global_buffer_width.o: global_buffer_width.cpp global_buffer_width.h
+global_buffer_width.o: global_buffer_width.cpp /usr/include/stdc-predef.h \
+ global_buffer_width.h
+
+/usr/include/stdc-predef.h:
 
 global_buffer_width.h:
