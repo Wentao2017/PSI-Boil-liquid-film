@@ -2,19 +2,19 @@
 #include "exchange_all.cpp"
 
 /* domain size */
-const real LX = 0.01;  // domain length in x (axial)
+const real LX = 0.01*32;  // domain length in x (axial)
 const real LY = 0.00125;  // domain length in y
 const real LZ = 0.01;     // domain length in z (wall-wall)
 
 /* grid size */
 const int gLevel = 4;
-const int NX  = 32*gLevel;  // uniform grid
+const int NX  = 32*gLevel*32;  // uniform grid
 const int NY  =  4*gLevel;
 const int NZ  = 32*gLevel;
 
 /* initial and boundary condition */
 const real dpdx = 5.2e+3;     // pressure drop given as boundary condition
-const real filmThick_init=2.5e-4;  // used for initial condition
+const real filmThick_init=5e-4;  // used for initial condition
 const real superfv_l_init=0.5;     // used for initial condition
 const real superfv_g_init=25.0;    // used for initial condition
 
@@ -54,7 +54,8 @@ main(int argc, char ** argv) {
   /*----------------+
   |  linear solver  |
   +----------------*/
-  Krylov * solver = new CG(d, Prec::di());
+ // Krylov * solver = new CG(d, Prec::di());
+    Krylov * solver = new CG(d, Prec::ic2());
 
   /*------------------+
   |  define unknowns  |
